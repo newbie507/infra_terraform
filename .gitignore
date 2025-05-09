@@ -1,0 +1,32 @@
+# ========== Terraform 기본 파일 무시 ==========
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash/
+*.log
+*.backup
+.terraform.lock.hcl
+
+# ========== 민감 정보 파일 무시 ==========
+*.tfvars
+*.tfvars.json
+secrets.auto.tfvars
+
+# ========== 제외할 디렉터리 ==========
+repo/
+infra_terraform.zip
+
+# ========== IDE 관련 파일 무시 ==========
+.vscode/
+.idea/
+*.swp
+*~
+
+# ========== OS별 시스템 파일 무시 ==========
+.DS_Store
+Thumbs.db
+
+# ========== 환경 구성 임시 파일 ==========
+.env
+*.pem
+*.key
